@@ -1,0 +1,471 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+:root{
+    --header-color: #2e2e2e;
+    --background-color: #fff;
+    --primary-color: #3d50ff;
+    --text-color: #5c5c5c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* html, body{
+    width: 100%;
+    overflow-x: hidden;
+} */
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    position: relative;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3rem;
+
+    line-height: 4rem;
+    color: var(--header-color);
+}
+
+h1{
+    width: 1ch;
+}
+
+h3, h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--header-color);
+}
+
+p{
+    font-size: 1.1rem;
+    max-width: 25rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+
+    padding: 0.7rem 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 100vh;
+    font-size: 1.1rem;  
+
+    cursor: pointer;
+}
+
+.navContainer{
+     position: sticky;
+    top: 0rem; 
+    width:100%;
+    background-color: var(--background-color);
+    padding-block: 1rem;
+    z-index: 2;
+}
+
+nav{
+    width: 90vw;
+    margin-inline: auto;
+    color: var(--header-color);
+    
+   
+    background-color: var(--background-color);
+
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    align-items: center;
+}
+
+nav ul li.name{
+
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: auto;
+ 
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 1rem;
+}
+nav ul li button{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.full{
+    display: none;
+}
+
+
+main{
+    overflow-x: hidden;
+    width: min(30rem,100%);
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+
+.colored{
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.heroSection{
+    padding-top: 2.5rem;
+}
+
+.heroSection p{
+    margin-top: 3rem;
+
+}
+
+
+.imgContainer{
+ 
+ margin-top: 2rem;   
+
+ border-radius: 2rem;
+ width: 100%;
+ height: 20rem;
+ 
+}
+
+.gradient{
+    background: rgb(202,122,255);
+   
+    background-image:  linear-gradient(270deg, rgba(202,122,255,1) 0%, rgba(105,100,253,1) 56%, rgba(57,77,245,1) 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.img1{
+
+   background-image: url(images/newPacifism.png),linear-gradient(202deg, rgba(255,122,250,1) 0%, rgb(105, 100, 253) 61%, rgba(61,80,255,1) 100%);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+  
+}
+
+.img2{
+    background-image: url(images/newPollution.png),linear-gradient(350deg, rgba(255,122,250,1) 0%, rgba(105,100,253,1) 61%, rgba(61,80,255,1) 100%);
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+
+    background-image: url(images/newCrypto.png),linear-gradient(133deg, rgba(255,122,250,1) 0%, rgba(105,100,253,1) 61%, rgba(61,80,255,1) 100%);
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+}
+
+
+.projectSection h2{
+margin-block: 8rem 4rem;
+}
+
+.project+.project{
+    margin-top: 11rem;
+}
+
+.projectSection h3{
+    margin-top: 3rem;
+}
+
+.projectSection p{
+
+    margin-top: 2rem;
+}
+
+.projectSection button{
+    margin-top: 3rem;
+}
+
+.projectSection a+a button{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.aboutSection{
+    margin-top: 10rem;
+}
+
+.aboutSection h2+p{
+    margin-top: 2rem;
+}
+
+.aboutSection button{
+    margin-top: 3rem;
+}
+
+footer{
+    margin-top: 8rem;
+    color: var(--background-color);
+    width:100%;
+   
+    background: rgb(202,122,255);
+background: linear-gradient(250deg, rgba(202,122,255,1) 0%, rgba(105,100,253,1) 56%, rgba(57,77,245,1) 100%);
+}
+
+.footerContainer{
+   width: min(30rem,100%);
+    padding-inline: 1rem; 
+    margin-inline: auto;
+}
+
+.footerContainer h2{
+    color: var(--background-color);
+    padding-top: 3rem;
+}
+
+.footerContainer ul{
+    padding-block: 1rem;
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+    
+}
+
+.footerContainer li{
+    
+   padding-block: 1rem;
+    list-style-type: none;
+}
+
+
+
+@media screen and (min-width: 800px) {
+  
+
+h1{
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.5rem;   
+}
+ 
+
+p{
+    font-size: 1.25rem;
+   
+}
+
+main{
+    width: min(40rem,100%);
+    padding-inline: 2rem;
+   
+}
+
+
+.heroSection{
+    padding-top: 3.5rem;
+}
+
+  .heroSection p{
+    margin-top: 4rem;
+  } 
+.projectSection h2{
+    margin-block: 12rem 6rem;
+    }
+    
+
+.project+.project{
+    margin-top: 15rem;
+}
+
+.projectSection button+button{
+    margin-left: 2rem;
+}
+
+.aboutSection{
+    margin-block: 15rem 8rem;
+}
+
+
+.footerContainer{
+    width: min(40rem,100%);
+}
+.footerContainer li{
+    padding-block: 1.5rem;
+}
+
+
+
+
+.footerContainer ul li{
+    font-size: 1.4rem;
+}
+}
+
+@media screen and (min-width: 1200px){
+ 
+ 
+
+    .pattern{
+    
+        border-radius: 100% 0% 65% 35% / 0% 57% 43% 100%    ;   
+        
+       background-image: url(images/art.svg);
+       background-size: 60rem;
+       background-position: bottom right;
+       height: 70vh;
+       width: 50vw;
+       position: absolute;
+       right: 0;
+       top: 0;
+       z-index: -1;
+       background-color: #000000;
+       opacity: 0.5;
+       background-blend-mode:  hard-light ;
+       
+       
+       }
+       
+       .pattern2{
+          
+       border-radius: 100% 0% 100% 0% / 24% 100% 0% 76%   ;
+       
+           background-image: url(images/art.svg);
+           background-size: 60rem;
+           background-position: top right;
+           height: 70vh;
+           width: 50vw;
+         
+        
+           z-index: -1;
+           background-color: #000000;
+           opacity: 0.5;
+           background-blend-mode:  hard-light ;
+       
+           
+           position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: -1;
+       
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .full{
+        display: block;
+       } 
+    
+       .short{
+        display: none;
+       }
+      
+
+
+  
+    main{
+        padding-inline: 4rem;
+        width: min(100rem,100%);  
+    }
+  
+
+    .heroSection{
+        padding-top: 3rem;
+    }
+  .heroSection p{
+    margin-top: 5rem;
+  }  
+
+ .project{
+    display: flex;
+    justify-content: space-between;
+    gap:10%;
+ }
+
+.projectSection h3{
+    margin-top: 2rem;
+}
+  
+    .imgContainer{
+        width: 50%;
+    }
+
+.aboutSection h2+p{
+    margin-top: 2rem;
+}
+ 
+.aboutSection p+button{
+    margin-top: 3rem;
+}
+    .footerContainer {
+        width: min(100rem,100%);
+       
+    }
+
+    .footerContainer ul{
+
+       
+        flex-direction: row;
+        gap: 7rem;
+        padding-block: 3rem;
+
+    }
+
+    
+}
+
+@media screen and (max-width: 330px) {
+    
+    h1{
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.3rem;
+
+    }
+    p{
+        font-size: 1rem;
+    }
+    button{
+        padding: 0.5rem 0.8rem;
+    }
+}
