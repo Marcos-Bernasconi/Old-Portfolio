@@ -333,46 +333,39 @@ main{
 
     .pattern{
     
-        border-radius: 100% 0% 65% 35% / 0% 57% 43% 100%    ;   
+        background-color: #943dff;
         
-       background-image: url(images/art.svg);
-       background-size: 60rem;
-       background-position: bottom right;
-       height: 70vh;
-       width: 50vw;
+       background-image: url(images/background.jpg);
+       background-size: cover;
+       
+       height: min(50rem,80vh);
+           width: min(60rem,50vw);
        position: absolute;
        right: 0;
        top: 0;
        z-index: -1;
-       background-color: #000000;
-       opacity: 0.5;
-       background-blend-mode:  hard-light ;
-       
-       
+
+      background-blend-mode: luminosity;
+       border-bottom-left-radius: 5rem;
        }
        
        .pattern2{
           
-       border-radius: 100% 0% 100% 0% / 24% 100% 0% 76%   ;
-       
-           background-image: url(images/art.svg);
-           background-size: 60rem;
-           background-position: top right;
-           height: 70vh;
-           width: 50vw;
-         
+    
+        background-color: #943dff;
         
-           z-index: -1;
-           background-color: #000000;
-           opacity: 0.5;
-           background-blend-mode:  hard-light ;
-       
-           
-           position: absolute;
+       background-image: url(images/background.jpg);
+       background-size: cover;
+       background-position: bottom;
+       height: min(50rem,80vh);
+           width: min(60rem,50vw);
+       position: absolute;
        right: 0;
        bottom: 0;
        z-index: -1;
-       
+
+      background-blend-mode: luminosity;
+       border-top-left-radius: 5rem;
        }
 
 
